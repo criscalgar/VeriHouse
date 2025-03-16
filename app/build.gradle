@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 
 android {
     namespace "com.example.verihouse"
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.verihouse"
-        minSdk 24
-        targetSdk 33
+        minSdk 26
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }
@@ -31,10 +31,9 @@ android {
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
-    
+    implementation 'com.google.android.material:material:1.10.0'
     def room_version = "2.4.3"
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"

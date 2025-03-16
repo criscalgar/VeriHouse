@@ -1,13 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Perfil"
-        android:textSize="24sp" />
+        android:orientation="vertical">
 
-</FrameLayout> 
+        <!-- Imagen de Perfil -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_profile_placeholder"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background" />
+
+
+        <Button
+            android:id="@+id/btnChangePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cambiar Foto"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="12dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Apellidos -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellidos"
+                android:drawableStart="@drawable/ic_lastname"
+                android:drawablePadding="12dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Nombre de Usuario -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre de Usuario"
+                android:drawableStart="@drawable/ic_user"
+                android:drawablePadding="12dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Correo Electrónico -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo Electrónico"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="12dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etBirthDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha de Nacimiento"
+                android:drawableStart="@drawable/ic_birthdate"
+                android:drawablePadding="12dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Género -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Género"
+                android:drawableStart="@drawable/ic_gender"
+                android:drawablePadding="12dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Ubicación -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ubicación"
+                android:drawableStart="@drawable/ic_location"
+                android:drawablePadding="12dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Teléfono -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="12dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar Perfil"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
+
+
+
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Cambios"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"/> <!-- Ocultar el botón al inicio -->
+
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesión"
+            android:backgroundTint="@color/red"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
