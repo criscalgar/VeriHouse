@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo para las tarjetas de propiedades -->
+    <style name="PropertyCard">
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <!-- Estilo para el título de la propiedad -->
+    <style name="PropertyTitle">
+        <item name="android:padding">16dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Estilo para el precio -->
+    <style name="PropertyPrice">
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/design_default_color_primary</item>
+    </style>
+
+    <!-- Estilo para los detalles -->
+    <style name="PropertyDetails">
+        <item name="android:padding">16dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/design_default_color_on_surface</item>
+    </style>
+</resources> 

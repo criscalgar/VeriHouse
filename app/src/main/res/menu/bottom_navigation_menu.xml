@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_cerca"
+        android:icon="@drawable/ic_location"
+        android:title="Cerca de mi" />
+    
+    <item
+        android:id="@+id/navigation_favoritos"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favoritos" />
+    
+    <item
+        android:id="@+id/navigation_busqueda"
+        android:icon="@drawable/ic_search"
+        android:title="Búsqueda" />
+    
+    <item
+        android:id="@+id/navigation_perfil"
+        android:icon="@drawable/ic_person"
+        android:title="Perfil" />
+</menu> 
